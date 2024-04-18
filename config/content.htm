@@ -84,7 +84,15 @@ Hostname github.com
 <p>而 Host 的設定與 Windows putty 中的 session 名稱相同, 配合使用的 ssh 連線指令將會是:</p>
 <p>git clone --recurse-submodules git@github.com:mdewcm2024/分組倉儲名稱.git</p>
 <p>當使用者完成 /home/runner/.ssh 目錄中的 id_rsa 與 config 建立後, Replit 會定期刪除免費用戶的 .ssh 目錄, 因此使用者必須將此兩個檔案存至隨身碟, 並在需要對分組倉儲改版時, 啟動分組倉儲的動態網站, 將隨身碟中的 id_rsa 與 config 檔案, upload 到分組倉儲的 downloads 目錄後, 再利用 ssh.py 的執行, 將 id_rsa 與 config 移動到 /home/runner/.ssh 目錄中. 也就是執行:python3 ssh.py</p>
+<p><span>ssh.py 程式內容如下:</span></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">import os
+if not os.path.exists("/home/runner/.ssh"): 
+    os.makedirs("/home/runner/.ssh") 
+os.system("mv ./downloads/id_rsa.txt /home/runner/.ssh/id_rsa")
+os.system("mv ./downloads/config.txt /home/runner/.ssh/config")
+os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <p></p>
+<p><em><strong>Git Tutorial</strong></em></p>
 <p>第5組<span>分組網站</span> <a href="https://mdewcm2024.github.io/1a-ag5">1a-ag5</a><span> (</span><a href="https://github.com/mdewcm2024/1a-ag5">repo</a><span>)</span></p><h1>W5</h1>
 <h1>W6</h1>
 <p><strong>四技網際內容管理第六週實習操作</strong></p>
