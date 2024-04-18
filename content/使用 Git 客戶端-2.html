@@ -2,7 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,27 +142,47 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">W3 << <a href='W3.html'>Previous</a> <a href='W5.html'>Next</a> >> W5<br /><h1>W4</h1>
-<p><span>四技 WCM 第四週課程, 複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法。</span></p>
-<p><em><strong>Replit 建立分組倉儲權限</strong></em></p>
-<p>由於 Replit 上的免費帳號僅允許與一個 Github 帳號對應, 因此若將分組網站 import 到 Replit, 必須自行在 /home/runner/.ssh 目錄下建立 id_rsa 與 config (id_rsa.pub 必須登錄到 Github 對應帳號), 其中的 config 內容為:</p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">Host github.com
-User git
-Hostname github.com
-</pre>
-<p>而 Host 的設定與 Windows putty 中的 session 名稱相同, 配合使用的 ssh 連線指令將會是:</p>
-<p>git clone --recurse-submodules git@github.com:mdewcm2024/分組倉儲名稱.git</p>
-<p>當使用者完成 /home/runner/.ssh 目錄中的 id_rsa 與 config 建立後, Replit 會定期刪除免費用戶的 .ssh 目錄, 因此使用者必須將此兩個檔案存至隨身碟, 並在需要對分組倉儲改版時, 啟動分組倉儲的動態網站, 將隨身碟中的 id_rsa 與 config 檔案, upload 到分組倉儲的 downloads 目錄後, 再利用 ssh.py 的執行, 將 id_rsa 與 config 移動到 /home/runner/.ssh 目錄中. 也就是執行:python3 ssh.py</p>
-<p><span>ssh.py 程式內容如下:</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">import os
-if not os.path.exists("/home/runner/.ssh"): 
-    os.makedirs("/home/runner/.ssh") 
-os.system("mv ./downloads/id_rsa.txt /home/runner/.ssh/id_rsa")
-os.system("mv ./downloads/config.txt /home/runner/.ssh/config")
-os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
-<p></p>
-<p><em><strong>Git Tutorial</strong></em></p>
-<p>第5組<span>分組網站</span> <a href="https://mdewcm2024.github.io/1a-ag5">1a-ag5</a><span> (</span><a href="https://github.com/mdewcm2024/1a-ag5">repo</a><span>)</span></p><br />W3 << <a href='W3.html'>Previous</a> <a href='W5.html'>Next</a> >> W5</div>
+    <div id="tipue_search_content">建立 Git 伺服器-2 << <a href='建立 Git 伺服器-2.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>使用 Git 客戶端-2</h1>
+<ol>
+<li>
+<p><strong>安裝 Git 客戶端</strong>： 如果尚未安裝 Git，請在 Windows 上下載並安裝 Git，就像在建立伺服器時所做的那樣。</p>
+</li>
+<li>
+<p><strong>克隆儲存庫</strong>： 打開命令提示符或 Git Bash，然後使用 <code>git clone</code> 命令克隆剛剛建立的儲存庫：</p>
+</li>
+</ol>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git clone file:///C:/path/to/your/repository.git</pre>
+<p><span></span></p>
+<div class="flex-1 overflow-hidden">
+<div class="react-scroll-to-bottom--css-hzcqg-79elbk h-full">
+<div class="react-scroll-to-bottom--css-hzcqg-1n7m0yu">
+<div>
+<div class="flex flex-col text-sm pb-9">
+<div class="w-full text-token-text-primary" data-testid="conversation-turn-11" dir="auto">
+<div class="px-4 py-2 justify-center text-base md:gap-6 m-auto">
+<div class="flex flex-1 text-base mx-auto gap-3 juice:gap-4 juice:md:gap-6 md:px-5 lg:px-1 xl:px-5 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+<div class="relative flex w-full flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div class="min-h-[20px] text-message flex flex-col items-start gap-3 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" data-message-author-role="assistant" data-message-id="47a7de38-f58a-4a4b-adb2-fb8e99233296" dir="auto">
+<div class="markdown prose w-full break-words dark:prose-invert light"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full pt-2 md:pt-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:w-[calc(100%-.5rem)]"><form class="stretch mx-2 flex flex-row gap-3 last:mb-2 md:mx-4 md:last:mb-6 lg:mx-auto lg:max-w-2xl xl:max-w-3xl">
+<div class="relative flex h-full flex-1 flex-col">
+<div class="flex w-full items-center"></div>
+</div>
+</form></div><br />建立 Git 伺服器-2 << <a href='建立 Git 伺服器-2.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
 
     <!-- footer -->
       <div class="container">
