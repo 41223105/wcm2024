@@ -74,7 +74,18 @@
 <p>git clone --recurse-submodules 倉儲網址_協定.git 指定目錄與否</p>
 <p>說明<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZbnYCWfEylAmXhpOqXWgZUBMxerlNYRgQsBBjZAQ90lmg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=8nGXOz">如何將組員的個人倉儲納入分組倉儲成為子模組</a></p>
 <p>說明<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EUlbUzMAyBFHrHX7bLPRKzsB3L-T-D413BPuH6pMSEZmjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=HjIQab">如何在 Replit 維護分組倉儲</a></p><h1>W4</h1>
-<h1>W5</h1>
+<p><span>四技 WCM 第四週課程, 複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法。</span></p>
+<p><em><strong>Replit 建立分組倉儲權限</strong></em></p>
+<p>由於 Replit 上的免費帳號僅允許與一個 Github 帳號對應, 因此若將分組網站 import 到 Replit, 必須自行在 /home/runner/.ssh 目錄下建立 id_rsa 與 config (id_rsa.pub 必須登錄到 Github 對應帳號), 其中的 config 內容為:</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">Host github.com
+User git
+Hostname github.com
+</pre>
+<p>而 Host 的設定與 Windows putty 中的 session 名稱相同, 配合使用的 ssh 連線指令將會是:</p>
+<p>git clone --recurse-submodules git@github.com:mdewcm2024/分組倉儲名稱.git</p>
+<p>當使用者完成 /home/runner/.ssh 目錄中的 id_rsa 與 config 建立後, Replit 會定期刪除免費用戶的 .ssh 目錄, 因此使用者必須將此兩個檔案存至隨身碟, 並在需要對分組倉儲改版時, 啟動分組倉儲的動態網站, 將隨身碟中的 id_rsa 與 config 檔案, upload 到分組倉儲的 downloads 目錄後, 再利用 ssh.py 的執行, 將 id_rsa 與 config 移動到 /home/runner/.ssh 目錄中. 也就是執行:python3 ssh.py</p>
+<p></p>
+<p>第5組<span>分組網站</span> <a href="https://mdewcm2024.github.io/1a-ag5">1a-ag5</a><span> (</span><a href="https://github.com/mdewcm2024/1a-ag5">repo</a><span>)</span></p><h1>W5</h1>
 <h1>W6</h1>
 <p><strong>四技網際內容管理第六週實習操作</strong></p>
 <p>請根據第六週的網誌, 實際操作下列兩項議題:</p>
