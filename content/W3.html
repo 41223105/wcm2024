@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='W1.html'>W1</a><li class='has-children'><a href='W2.html'>W2</a><ul class='dropdown'><li><a href='建立個人課程.html'>建立個人課程</a></li></ul><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,8 +142,29 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">建立個人課程 << <a href='建立個人課程.html'>Previous</a> <a href='W4.html'>Next</a> >> W4<br /><h1>W3</h1>
-<br />建立個人課程 << <a href='建立個人課程.html'>Previous</a> <a href='W4.html'>Next</a> >> W4</div>
+    <div id="tipue_search_content">W2 << <a href='W2.html'>Previous</a> <a href='W4.html'>Next</a> >> W4<br /><h1>W3</h1>
+<p><em><strong>利用 Github Classroom 建立分組網站 </strong></em></p>
+<p>在 mdewcm2024 帳號下, 期中分組作業名稱為 1a, 若第一組組長建立 Team 名稱為 midag1, 則分組倉儲名稱將為 1a-midag1, 而五專課程則使用 5j-midjg1, 需要如此命名作業與分組倉儲名稱的原因是, 在 Github Classroom 同一個 organization 名稱下 (即 wcm2024), 各班作業名稱必須有所區別, 而且各分組 Team 名稱也不能相同.</p>
+<p><em><strong>利用 Github Codespaces 維護倉儲</strong></em></p>
+<p>如前所述, 使用 Replit 管理分組網站, 必須採動態建立 .ssh 目錄中的私鑰與 config, 過程比較複雜, 但若採用 Github Codespaces, 則可以在登入 Github 帳號下, 管理該帳號所有授權的倉儲, 包括分組倉儲與網站, 唯一的限制是每個月只能使用 120 core hours。</p>
+<p><em><strong>常用的 git 指令</strong></em></p>
+<p>git 的新增、提交與推送指令:</p>
+<p>git add . git commit -m "說明字串" git push</p>
+<p>使用 git add . 表示要認列所進行的全部改版內容, git commit -m 執行之前, 若在近端使用, 必須先行設定 git config, 將 home_ipv6 目錄下的 .gitconfig 中明確列出改版者的身分, 其中包括:</p>
+<p>git config --global user.name "提交者的 github 帳號名稱"</p>
+<p>git config --global user.email "提交者在 github 所登錄的 email address"</p>
+<p>使用者也可以利用 git version 查詢目前所使用的 git 版本.</p>
+<p>git status 通常用來查核目前近端的改版狀況, 例如: 是否與遠端倉儲同步, 或者遠端倉儲已經有了新版本.</p>
+<p>若遠端倉儲已經有新的版本, 則在 git push 之前, 必須設法取下遠端資料進行合併後, 才能再提交新的版本並推送到遠端.</p>
+<p>git pull = git fetch + git merge</p>
+<p>由於要將各組員的 wcm2024 設定為各分組倉儲的子模組, 因此必須利用 git submodule add 以各組員的學號作為子目錄名稱, 利用下列指令, 將組員倉儲新增為分組倉儲的子模組:</p>
+<p>git submodule add 倉儲網址 子目錄</p>
+<p>若只要取下倉儲的主要內容, 可以使用下列指令:</p>
+<p>git clone 倉儲網址_協定.git 指定目錄與否</p>
+<p>若要取下帶有子模組的倉儲, 且可能該子模組還有設定其他子模組, 則必須要加上 --recurse-submodules:</p>
+<p>git clone --recurse-submodules 倉儲網址_協定.git 指定目錄與否</p>
+<p>說明<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZbnYCWfEylAmXhpOqXWgZUBMxerlNYRgQsBBjZAQ90lmg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=8nGXOz">如何將組員的個人倉儲納入分組倉儲成為子模組</a></p>
+<p>說明<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EUlbUzMAyBFHrHX7bLPRKzsB3L-T-D413BPuH6pMSEZmjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=HjIQab">如何在 Replit 維護分組倉儲</a></p><br />W2 << <a href='W2.html'>Previous</a> <a href='W4.html'>Next</a> >> W4</div>
 
     <!-- footer -->
       <div class="container">
