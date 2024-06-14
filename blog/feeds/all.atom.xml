@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T23:20:00+08:00</updated><entry><title>w13 課程內容</title><link href="./2024-Spring-w13-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:20:00+08:00</published><updated>2024-06-14T15:20:10+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w13-blog-tutorial.html</id><summary type="html">&lt;p&gt;w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T23:44:00+08:00</updated><entry><title>w14 課程內容</title><link href="./2024-Spring-w14-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:44:00+08:00</published><updated>2024-06-14T15:44:46+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w14-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h1&gt;網站內容整理&lt;/h1&gt;
+&lt;p&gt;上課內容：
+1.有關建立網站
+2.Replit靜態網站檢視
+3.建立Replit分組倉儲權限
+4.Replit,Codespaces與Gitpods執行靜態與動態網站
+5.複習前三週上課內容與git介紹&lt;/p&gt;</content><category term="w14"></category><category term="網誌編寫"></category></entry><entry><title>w13 課程內容</title><link href="./2024-Spring-w13-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:20:00+08:00</published><updated>2024-06-14T15:41:28+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w13-blog-tutorial.html</id><summary type="html">&lt;p&gt;w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
 
 
@@ -18,13 +26,13 @@
 提醒學員注意資料備份和安全：&lt;/p&gt;
 &lt;p&gt;定期備份重要數據。&lt;/p&gt;
 &lt;p&gt;不要將敏感信息存儲在公共目錄中。&lt;/p&gt;
-&lt;p&gt;使用安全的密碼和兩步驗證（如有可能）。&lt;/p&gt;</content><category term="w13"></category><category term="網誌編寫"></category></entry><entry><title>w11 課程內容</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T22:34:00+08:00</published><updated>2024-06-14T15:35:46+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
+&lt;p&gt;使用安全的密碼和兩步驗證（如有可能）。&lt;/p&gt;</content><category term="w13"></category><category term="網誌編寫"></category></entry><entry><title>w10 課程內容</title><link href="./2024-Spring-w10-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T22:55:00+08:00</published><updated>2024-06-14T15:45:07+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w10-blog-tutorial.html</id><summary type="html">&lt;p&gt;w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 
 
 &lt;h1&gt;Brython 程式環境&lt;/h1&gt;
 &lt;p&gt;將 brython_w_editor_html.txt 超文件內容放入網誌中, 即可得到下列內容.&lt;/p&gt;
-&lt;p&gt;若要放入動態網站, 則必須注意各引用頁面是由 cmsimde 目錄中啟動, 必須使用 brython_on_editor.txt 超文件格式.&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>w9 課程內容</title><link href="./2024-Spring-w9-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T22:34:00+08:00</published><updated>2024-06-14T14:44:34+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w9-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;若要放入動態網站, 則必須注意各引用頁面是由 cmsimde 目錄中啟動, 必須使用 brython_on_editor.txt 超文件格式.&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>w9 課程內容</title><link href="./2024-Spring-w9-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T22:34:00+08:00</published><updated>2024-06-14T14:44:34+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w9-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;期中課程整理&lt;/h1&gt;
 &lt;p&gt;目的：利用網頁來管理與個人或專業領域應用相關的內容&lt;/p&gt;
