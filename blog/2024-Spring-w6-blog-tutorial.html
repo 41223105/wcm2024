@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+      <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>網際內容管理系統 - Tags</title>
+  <title>w6 課程內容</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -18,6 +18,7 @@
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Categories Atom Feed" />
 
   <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -38,6 +39,52 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+
+    <link href="./2024-Spring-w6-blog-tutorial.html" rel="canonical" />
+
+        <meta name="description" content="w6 上課內容， 說明如何透過與 ChatGPT 的對話, 了解有關 git 在不同專業領域的應用方法.">
+
+        <meta name="author" content="kmol">
+
+        <meta name="tags" content="網誌編寫">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="網際內容管理系統"/>
+<meta property="og:title" content="w6 課程內容"/>
+<meta property="og:description" content="w6 上課內容， 說明如何透過與 ChatGPT 的對話, 了解有關 git 在不同專業領域的應用方法."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="./2024-Spring-w6-blog-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-06-14 16:03:00+08:00"/>
+<meta property="article:modified_time" content="2024-06-14 08:06:08.151671+08:00"/>
+<meta property="article:author" content="./author/kmol.html">
+<meta property="article:section" content="w6"/>
+<meta property="article:tag" content="網誌編寫"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "w6 課程內容",
+  "headline": "w6 課程內容",
+  "datePublished": "2024-06-14 16:03:00+08:00",
+  "dateModified": "2024-06-14 08:06:08.151671+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "kmol",
+    "url": "./author/kmol.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-Spring-w6-blog-tutorial.html",
+  "description": "w6 上課內容， 說明如何透過與 ChatGPT 的對話, 了解有關 git 在不同專業領域的應用方法."
+}
+</script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
@@ -140,23 +187,34 @@ init_mathjax();
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">網際內容管理系統 - Tags</h1>
+        <h1 class="post-title">w6 課程內容</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/kmol.html">Kmol</a>
+            | <time datetime="Fri 14 June 2024">Fri 14 June 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on Fri 14 June 2024</span>
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
-        
       </div>
-    </header>    
+    </header>
 
   <section id="wrapper">
     <a class="hidden-close"></a>
@@ -167,11 +225,58 @@ init_mathjax();
     </form>
 </section>
 
-    <article class="post">
-      <div class="inner">
-        <a href="./tag/wang-zhi-bian-xie.html">網誌編寫</a> (7)
-      </div>
-    </article>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>w6 上課內容， 說明如何透過與 ChatGPT 的對話, 了解有關 git 在不同專業領域的應用方法.</p>
+
+
+<h1>Git 歷史與希望解決的問題</h1>
+<p>Git 的發展歷史可以追溯到2005年，當時Linux的創始人Linus Torvalds為了管理Linux核心開發而創建了Git版本控制系統。以下是Git的主要發展歷程：</p>
+<p>2005年：Git 誕生。Linus Torvalds開始編寫 Git 作為管理 Linux 內核代碼的工具。他受到 BitKeeper 版本控制系統的啟發，但對於一些限制感到不滿，因此決定創建自己的版本控制系統。</p>
+<p>2005年4月：Git 開始在 Linux 內核開發中使用。Torvalds將Linux內核的版本控制從BitKeeper轉移到Git。</p>
+<p>2005年6月：Git 1.0版本發布。這是Git的首個正式穩定版本，標誌著Git正式進入廣泛使用的階段。</p>
+<p>2008年：GitHub成立。GitHub是一個基於Git的代碼托管平台，為開發者提供了方便的代碼存儲、版本控制和協作功能。GitHub的出現進一步推動了Git的普及和發展。</p>
+<p>2012年：Git 1.8.0版本發布。這是Git的一個重要版本，引入了許多新特性和改進，包括重寫的分支合併策略、子模組支持等。</p>
+<p>2016年：Git 2.0版本發布。這個版本引入了一些重要的改進和更新，包括重新設計的設置系統、忽略規則的改進等。</p>
+<p>至今：Git 不斷進行著更新和改進。每個新版本都帶來了更多的功能、性能優化和使用體驗改進，使得Git在軟件開發領域中得到廣泛應用。</p>
+<h1>一般相同專業人士如何利用 git 解決內容管理問題?</h1>
+<p>對於一般的專業人士，尤其是軟件開發人員和其他技術人員來說，Git 是一個強大的工具，可以幫助他們解決內容管理問題。以下是一些一般相同專業人士如何利用 Git 解決內容管理問題的方式：</p>
+<p>版本控制：Git 讓你能夠跟蹤和管理內容的各個版本。這對於文檔、代碼、配置文件等各種類型的內容都非常有用。你可以隨時回溯到之前的版本，比如當需要查找錯誤的起源時，或者需要恢復到之前的穩定狀態時。</p>
+<p>分支和合併：Git 允許創建分支來獨立開發新功能或修復問題，而不會影響主要的開發分支。這樣可以同時進行多個功能的開發，而不會相互干擾。然後，你可以使用合併操作將這些分支合併回主要的開發線上。</p>
+<p>協作：Git 提供了便捷的方式讓多個人協作開發同一個項目。通過將代碼庫克隆到本地，進行修改後再推送回原始代碼庫，不同團隊成員可以輕鬆地共享和合作。這對於團隊內部或跨團隊之間的合作都非常有用。</p>
+<p>代碼審查：Git 可以與代碼審查工具結合使用，這使得團隊能夠進行代碼審查，從而提高代碼質量和可讀性。通過在代碼庫中創建分支，然後將分支中的代碼發送給同事進行審查，可以有效地進行代碼審查流程。</p>
+<p>自動化流程：利用 Git 的 Hooks 功能，可以實現自動化的流程。例如，你可以設置 pre-commit hook，在提交代碼之前運行測試，從而確保提交的代碼是合格的。這樣可以提高代碼的質量並減少錯誤。</p>
+<p>Git 是一個非常強大且靈活的工具，可以滿足各種內容管理需求。通過充分利用 Git 的功能，專業人士可以更有效地管理和協作開發項目，提高生產力和內容質量。</p>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/wang-zhi-bian-xie.html">網誌編寫</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="./2024-Spring-w5-blog-tutorial.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">w5 課程內容</h2>
+                            <p class="post-nav-excerpt">w5 上課內容，以 iframe 嵌入先前的教學影片, 並摘要各影片內容.</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
