@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T15:32:00+08:00</updated><entry><title>w1 課程內容</title><link href="./2024-Spring-w1.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T15:32:00+08:00</published><updated>2024-06-14T07:35:44+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w1.-blog-tutorial.html</id><summary type="html">&lt;p&gt;w1 上課內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T15:40:00+08:00</updated><entry><title>w2 課程內容</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T15:40:00+08:00</published><updated>2024-06-14T07:43:12+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;w2 上課內容，主要確認各學員是否完成 Github 中個人倉儲與網站的建立，並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;w2 上課內容，主要確認各學員是否完成 Github 中個人倉儲與網站的建立，並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+
+
+&lt;h1&gt;利用 Github Classroom 建立分組網站&lt;/h1&gt;
+&lt;p&gt;在 mdewcm2024 帳號下, 期中分組作業名稱為 1a,各班作業名稱必須有所區別, 而且各分組 Team 名稱也不能相同.&lt;/p&gt;
+&lt;h1&gt;如何利用 Codespaces 維護網站&lt;/h1&gt;
+&lt;p&gt;採用 Github Codespaces 維護網站的好處是, Visual Studio code 介面提供多終端機與多 ports 開啟功能, 在 Codespaces 中維護 wcm2024 的過程幾乎如同在 localhost Windows 10 或 11 的操作系統環境中進行.&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>w1 課程內容</title><link href="./2024-Spring-w1.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T15:32:00+08:00</published><updated>2024-06-14T07:35:44+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w1.-blog-tutorial.html</id><summary type="html">&lt;p&gt;w1 上課內容&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;w1 上課內容&lt;/p&gt;
 
 
