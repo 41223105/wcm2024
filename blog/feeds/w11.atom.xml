@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w11</title><link href="./" rel="alternate"></link><link href="./feeds/w11.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T22:34:00+08:00</updated><entry><title>w11 課程內容</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T22:34:00+08:00</published><updated>2024-06-14T15:13:32+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w11-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w11</title><link href="./" rel="alternate"></link><link href="./feeds/w11.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T22:34:00+08:00</updated><entry><title>w11 課程內容</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T22:34:00+08:00</published><updated>2024-06-14T15:35:46+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 
-&lt;p&gt;w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
+
 &lt;h1&gt;Brython 程式環境&lt;/h1&gt;
 &lt;p&gt;將 brython_w_editor_html.txt 超文件內容放入網誌中, 即可得到下列內容.&lt;/p&gt;
 &lt;p&gt;若要放入動態網站, 則必須注意各引用頁面是由 cmsimde 目錄中啟動, 必須使用 brython_on_editor.txt 超文件格式.&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry></feed>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>網際內容管理系統 - Authors</title>
+  <title>w13 課程內容</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -18,6 +18,7 @@
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Categories Atom Feed" />
 
   <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -39,27 +40,49 @@
   <![endif]-->
 
 
+    <link href="./2024-Spring-w13-blog-tutorial.html" rel="canonical" />
+
+        <meta name="description" content="w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起">
+
+        <meta name="author" content="kmol">
+
+        <meta name="tags" content="網誌編寫">
+
+
 
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="網際內容管理系統"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="網際內容管理系統"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:title" content="w13 課程內容"/>
+<meta property="og:description" content="w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./"/>
-<meta property="og:image" content="./theme/images/home-bg.jpg">
+<meta property="og:url" content="./2024-Spring-w13-blog-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-06-14 23:20:00+08:00"/>
+<meta property="article:modified_time" content="2024-06-14 15:20:10.758597+08:00"/>
+<meta property="article:author" content="./author/kmol.html">
+<meta property="article:section" content="w13"/>
+<meta property="article:tag" content="網誌編寫"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " 網際內容管理系統 ",
-  "url" : "./",
-  "image": "./theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "w13 課程內容",
+  "headline": "w13 課程內容",
+  "datePublished": "2024-06-14 23:20:00+08:00",
+  "dateModified": "2024-06-14 15:20:10.758597+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "kmol",
+    "url": "./author/kmol.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-Spring-w13-blog-tutorial.html",
+  "description": "w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起"
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -164,19 +187,31 @@ init_mathjax();
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Articles by </h1>
+        <h1 class="post-title">w13 課程內容</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/kmol.html">Kmol</a>
+            | <time datetime="Fri 14 June 2024">Fri 14 June 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on Fri 14 June 2024</span>
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
@@ -190,15 +225,57 @@ init_mathjax();
     </form>
 </section>
 
-      <article class="post">
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
         <div class="inner">
-            <a href="./author/kmol.html" rel="bookmark">
-                <h2 class="post-title">
-                    kmol (11)
-                </h2>
-            </a>
-        </div>
-      </article>
+            <section class="post-content">
+                <p>w13網際內容管理上課內容, 從單機猜數字遊戲與 AI 應用談起</p>
+
+
+<h1>使用 SSH 客戶端遠端登入</h1>
+<p>學員需要一個 SSH 客戶端來連接到主機。以下是使用不同操作系統的簡單說明：</p>
+<p>Windows 可以使用 PuTTY 或 Windows Terminal。</p>
+<p>打開 PuTTY，輸入 stud.cycu.org 作為主機名，並輸入用戶名和初始密碼。</p>
+<p>macOS 和 Linux 打開終端（Terminal）。</p>
+<p>輸入以下命令：</p>
+<p>ssh 學號@stud.cycu.org 例如，如果學號是 s1234567，則輸入：</p>
+<p>ssh s1234567@stud.cycu.org</p>
+<h1>修改初始密碼</h1>
+<p>首次登入後，應立即修改初始密碼。可以使用 passwd 命令來修改：</p>
+<p>passwd 系統會提示輸入當前密碼，然後輸入並確認新密碼。</p>
+<p>確保資料安全
+提醒學員注意資料備份和安全：</p>
+<p>定期備份重要數據。</p>
+<p>不要將敏感信息存儲在公共目錄中。</p>
+<p>使用安全的密碼和兩步驗證（如有可能）。</p>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/wang-zhi-bian-xie.html">網誌編寫</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="./2024-Spring-w11-blog-tutorial.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">w11 課程內容</h2>
+                            <p class="post-nav-excerpt">w11網際內容管理上課內容,說明如何在網頁中加入 Brython 程式應用</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
