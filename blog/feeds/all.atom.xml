@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T15:40:00+08:00</updated><entry><title>w2 課程內容</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T15:40:00+08:00</published><updated>2024-06-14T07:43:12+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;w2 上課內容，主要確認各學員是否完成 Github 中個人倉儲與網站的建立，並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-14T15:44:00+08:00</updated><entry><title>w3 課程內容</title><link href="./2024-Spring-w3-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T15:44:00+08:00</published><updated>2024-06-14T07:46:51+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w3-blog-tutorial.html</id><summary type="html">&lt;p&gt;w3 上課內容，除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;w3 上課內容，除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站.&lt;/p&gt;
+
+
+&lt;h1&gt;利用Gitpod維護倉儲&lt;/h1&gt;
+&lt;p&gt;https://www.gitpod.io/ - gitpod的使用與 Codespaces 類似,每個月有 50 小時的免費使用時間, 可以使用 Github 帳號登入&lt;/p&gt;
+&lt;h1&gt;利用 localhost 維護倉儲&lt;/h1&gt;
+&lt;p&gt;透過 Windows 環境中的 USB 隨身碟, 配置可攜程式系統, 用來管理個人與分組的分組倉儲與網站, 可使用老師給的portable_2024.7z(密碼為:kmolab)&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry><entry><title>w2 課程內容</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T15:40:00+08:00</published><updated>2024-06-14T07:43:12+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;w2 上課內容，主要確認各學員是否完成 Github 中個人倉儲與網站的建立，並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;w2 上課內容，主要確認各學員是否完成 Github 中個人倉儲與網站的建立，並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 
 
