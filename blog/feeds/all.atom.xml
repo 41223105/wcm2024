@@ -1,5 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-15T09:39:40+08:00</updated><entry><title>w14 課程內容</title><link href="./2024-Spring-w14-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:44:00+08:00</published><updated>2024-06-14T17:40:21+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w14-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T10:25:00+08:00</updated><entry><title>期末報告</title><link href="./2024-Spring-%E6%9C%9F%E6%9C%AB-blog-tutorial.html" rel="alternate"></link><published>2024-06-20T10:25:00+08:00</published><updated>2024-06-20T02:30:04+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-20:./2024-Spring-期末-blog-tutorial.html</id><summary type="html">&lt;p&gt;期末報告：做出小遊戲&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;期末報告：做出小遊戲&lt;/p&gt;
+
+
+&lt;p&gt;期末專案&lt;/p&gt;
+&lt;p&gt;"猴子吃香蕉小遊戲"&lt;/p&gt;
+&lt;h1&gt;ME:幫我用python寫出猴子吃香蕉的遊戲 用網頁方式呈現&lt;/h1&gt;
+&lt;p&gt;chatgpt:&lt;/p&gt;
+&lt;p&gt;可以利用Python的Flask框架來建立一個簡單的網頁遊戲，讓猴子吃香蕉。這個遊戲會包括以下幾個部分：&lt;/p&gt;
+&lt;p&gt;伺服器端的Python代碼，用於處理網頁請求。
+客戶端的HTML和JavaScript代碼，用於顯示遊戲和處理用戶互動。
+首先，我們需要安裝Flask。你可以使用以下命令來安裝：&lt;/p&gt;
+&lt;p&gt;pip install flask
+然後，創建一個Flask應用程序，並撰寫HTML和JavaScript代碼。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Flask 伺服器端代碼（app.py）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;from flask import Flask, render_template&lt;/p&gt;
+&lt;p&gt;app = Flask(&lt;strong&gt;name&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;@app.route('/')
+def index():
+    return render_template('index.html')&lt;/p&gt;
+&lt;p&gt;if &lt;strong&gt;name&lt;/strong&gt; == '&lt;strong&gt;main&lt;/strong&gt;':
+    app.run(debug=True)
+2. HTML和JavaScript代碼（templates/index.html）&lt;/p&gt;
+&lt;p&gt;在這個文件中，我們會撰寫HTML來顯示遊戲界面，並使用JavaScript來處理遊戲邏輯。&lt;/p&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;猴子吃香蕉遊戲&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        #gameCanvas {
+            border: 1px solid #000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id="gameCanvas" width="800" height="600"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let monkey = {
+            x: canvas.width / 2,
+            y: canvas.height - 60,
+            width: 50,
+            height: 50,
+            dx: 5
+        };
+
+        let banana = {
+            x: Math.random() * canvas.width,
+            y: 0,
+            width: 30,
+            height: 30,
+            dy: 2
+        };
+
+        function drawMonkey() {
+            ctx.fillStyle = 'brown';
+            ctx.fillRect(monkey.x, monkey.y, monkey.width, monkey.height);
+        }
+
+        function drawBanana() {
+            ctx.fillStyle = 'yellow';
+            ctx.fillRect(banana.x, banana.y, banana.width, banana.height);
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function moveBanana() {
+            banana.y += banana.dy;
+            if (banana.y &gt; canvas.height) {
+                banana.y = 0;
+                banana.x = Math.random() * canvas.width;
+            }
+        }
+
+        function detectCollision() {
+            if (banana.x &lt; monkey.x + monkey.width &amp;&amp;
+                banana.x + banana.width &gt; monkey.x &amp;&amp;
+                banana.y &lt; monkey.y + monkey.height &amp;&amp;
+                banana.y + banana.height &gt; monkey.y) {
+                banana.y = 0;
+                banana.x = Math.random() * canvas.width;
+                alert('猴子吃到香蕉了！');
+            }
+        }
+
+        function update() {
+            clearCanvas();
+            drawMonkey();
+            drawBanana();
+            moveBanana();
+            detectCollision();
+            requestAnimationFrame(update);
+        }
+
+        function moveMonkey(event) {
+            if (event.key === 'ArrowLeft' &amp;&amp; monkey.x &gt; 0) {
+                monkey.x -= monkey.dx;
+            } else if (event.key === 'ArrowRight' &amp;&amp; monkey.x + monkey.width &lt; canvas.width) {
+                monkey.x += monkey.dx;
+            }
+        }
+
+        document.addEventListener('keydown', moveMonkey);
+        update();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;運行項目&lt;/p&gt;
+&lt;p&gt;保存這些代碼到相應的文件（例如app.py和templates/index.html），然後運行app.py：&lt;/p&gt;
+&lt;p&gt;python app.py
+這樣你就可以在瀏覽器中打開http://127.0.0.1:5000/來玩這個簡單的猴子吃香蕉遊戲了。&lt;/p&gt;
+&lt;p&gt;這個遊戲是很基礎的，你可以根據需要進一步擴展，比如添加分數計算、多個香蕉、不同的關卡等。&lt;/p&gt;
+&lt;p&gt;因為問的問題不夠完整，沒有跑出要把東西放在哪邊，於是我又問了第二個問題&lt;/p&gt;
+&lt;h1&gt;ME:要放在哪裡？&lt;/h1&gt;
+&lt;p&gt;chatgpt: 當前的項目結構應該如下：&lt;/p&gt;
+&lt;p&gt;monkey_banana_game/
+│
+├── app.py
+└── templates/
+    └── index.html
+步驟：&lt;/p&gt;
+&lt;p&gt;創建專案目錄： 在你的工作目錄下創建一個新的文件夾，例如monkey_banana_game。&lt;/p&gt;
+&lt;p&gt;創建 app.py 文件： 在monkey_banana_game文件夾內創建一個名為app.py的文件，並將以下內容複製到app.py中：&lt;/p&gt;
+&lt;p&gt;from flask import Flask, render_template&lt;/p&gt;
+&lt;p&gt;app = Flask(&lt;strong&gt;name&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;@app.route('/')
+def index():
+    return render_template('index.html')&lt;/p&gt;
+&lt;p&gt;if &lt;strong&gt;name&lt;/strong&gt; == '&lt;strong&gt;main&lt;/strong&gt;':
+    app.run(debug=True)
+創建 templates 目錄： 在monkey_banana_game文件夾內創建一個名為templates的文件夾。&lt;/p&gt;
+&lt;p&gt;創建 index.html 文件： 在templates文件夾內創建一個名為index.html的文件，並將以下內容複製到index.html中：&lt;/p&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;猴子吃香蕉遊戲&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        #gameCanvas {
+            border: 1px solid #000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id="gameCanvas" width="800" height="600"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let monkey = {
+            x: canvas.width / 2,
+            y: canvas.height - 60,
+            width: 50,
+            height: 50,
+            dx: 5
+        };
+
+        let banana = {
+            x: Math.random() * canvas.width,
+            y: 0,
+            width: 30,
+            height: 30,
+            dy: 2
+        };
+
+        function drawMonkey() {
+            ctx.fillStyle = 'brown';
+            ctx.fillRect(monkey.x, monkey.y, monkey.width, monkey.height);
+        }
+
+        function drawBanana() {
+            ctx.fillStyle = 'yellow';
+            ctx.fillRect(banana.x, banana.y, banana.width, banana.height);
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function moveBanana() {
+            banana.y += banana.dy;
+            if (banana.y &gt; canvas.height) {
+                banana.y = 0;
+                banana.x = Math.random() * canvas.width;
+            }
+        }
+
+        function detectCollision() {
+            if (banana.x &lt; monkey.x + monkey.width &amp;&amp;
+                banana.x + banana.width &gt; monkey.x &amp;&amp;
+                banana.y &lt; monkey.y + monkey.height &amp;&amp;
+                banana.y + banana.height &gt; monkey.y) {
+                banana.y = 0;
+                banana.x = Math.random() * canvas.width;
+                alert('猴子吃到香蕉了！');
+            }
+        }
+
+        function update() {
+            clearCanvas();
+            drawMonkey();
+            drawBanana();
+            moveBanana();
+            detectCollision();
+            requestAnimationFrame(update);
+        }
+
+        function moveMonkey(event) {
+            if (event.key === 'ArrowLeft' &amp;&amp; monkey.x &gt; 0) {
+                monkey.x -= monkey.dx;
+            } else if (event.key === 'ArrowRight' &amp;&amp; monkey.x + monkey.width &lt; canvas.width) {
+                monkey.x += monkey.dx;
+            }
+        }
+
+        document.addEventListener('keydown', moveMonkey);
+        update();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;p&gt;運行 Flask 應用： 打開命令行工具，導航到monkey_banana_game文件夾，然後運行以下命令：
+1
+python app.py&lt;/p&gt;
+&lt;p&gt;在瀏覽器中打開遊戲： 打開瀏覽器，訪問http://127.0.0.1:5000/，你就可以看到並玩這個簡單的猴子吃香蕉遊戲了。&lt;/p&gt;</content><category term="期末"></category><category term="網誌編寫"></category></entry><entry><title>w14 課程內容</title><link href="./2024-Spring-w14-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:44:00+08:00</published><updated>2024-06-14T17:40:21+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w14-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;網站內容整理&lt;/h1&gt;
 &lt;p&gt;上課內容：

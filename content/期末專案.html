@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li class='has-children'><a href='homework.html'>homework</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='w8.html'>w8</a><li><a href='w9.html'>w9</a><li><a href='w10.html'>w10</a><li><a href='w13.html'>w13</a><li><a href='w14.html'>w14</a></li></ul><li class='has-children'><a href='期中課程整理.html'>期中課程整理</a><ul class='dropdown'><li><a href='網頁式內容管理.html'>網頁式內容管理</a><li><a href='Python 程式系統.html'>Python 程式系統</a><li><a href='網頁上的 IDE.html'>網頁上的 IDE</a></li></ul><li><a href='期末專案.html'>期末專案</a><li class='has-children'><a href='基礎語法.html'>基礎語法</a><ul class='dropdown'><li><a href='了解基本 html 語法.html'>了解基本 html 語法</a><li><a href='JavaScript基礎語法.html'>JavaScript基礎語法</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li class='has-children'><a href='homework.html'>homework</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='w8.html'>w8</a><li><a href='w9.html'>w9</a><li><a href='w10.html'>w10</a><li><a href='w13.html'>w13</a><li><a href='w14.html'>w14</a></li></ul><li class='has-children'><a href='期中課程整理.html'>期中課程整理</a><ul class='dropdown'><li><a href='網頁式內容管理.html'>網頁式內容管理</a><li><a href='Python 程式系統.html'>Python 程式系統</a><li><a href='網頁上的 IDE.html'>網頁上的 IDE</a></li></ul><li class='has-children'><a href='期末專案.html'>期末專案</a><ul class='dropdown'><li><a href='第二個問題.html'>第二個問題</a></li></ul><li class='has-children'><a href='基礎語法.html'>基礎語法</a><ul class='dropdown'><li><a href='了解基本 html 語法.html'>了解基本 html 語法</a><li><a href='JavaScript基礎語法.html'>JavaScript基礎語法</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,8 +142,139 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">網頁上的 IDE << <a href='網頁上的 IDE.html'>Previous</a> <a href='基礎語法.html'>Next</a> >> 基礎語法<br /><h1>期末專案</h1>
-<br />網頁上的 IDE << <a href='網頁上的 IDE.html'>Previous</a> <a href='基礎語法.html'>Next</a> >> 基礎語法</div>
+    <div id="tipue_search_content">網頁上的 IDE << <a href='網頁上的 IDE.html'>Previous</a> <a href='第二個問題.html'>Next</a> >> 第二個問題<br /><h1>期末專案</h1>
+<h4>"猴子吃香蕉小遊戲"</h4>
+<p>ME:<span>幫我用python寫出猴子吃香蕉的遊戲 用網頁方式呈現</span></p>
+<p>chatgpt:</p>
+<p>可以利用Python的Flask框架來建立一個簡單的網頁遊戲，讓猴子吃香蕉。這個遊戲會包括以下幾個部分：</p>
+<ol>
+<li>伺服器端的Python代碼，用於處理網頁請求。</li>
+<li>客戶端的HTML和JavaScript代碼，用於顯示遊戲和處理用戶互動。</li>
+</ol>
+<p>首先，我們需要安裝Flask。你可以使用以下命令來安裝：</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">pip install flask</pre>
+<p>然後，創建一個Flask應用程序，並撰寫HTML和JavaScript代碼。</p>
+<h4>1. Flask 伺服器端代碼（app.py）</h4>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</pre>
+<h4>2. HTML和JavaScript代碼（templates/index.html）</h4>
+<p>在這個文件中，我們會撰寫HTML來顯示遊戲界面，並使用JavaScript來處理遊戲邏輯。</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;猴子吃香蕉遊戲&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        #gameCanvas {
+            border: 1px solid #000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id="gameCanvas" width="800" height="600"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let monkey = {
+            x: canvas.width / 2,
+            y: canvas.height - 60,
+            width: 50,
+            height: 50,
+            dx: 5
+        };
+
+        let banana = {
+            x: Math.random() * canvas.width,
+            y: 0,
+            width: 30,
+            height: 30,
+            dy: 2
+        };
+
+        function drawMonkey() {
+            ctx.fillStyle = 'brown';
+            ctx.fillRect(monkey.x, monkey.y, monkey.width, monkey.height);
+        }
+
+        function drawBanana() {
+            ctx.fillStyle = 'yellow';
+            ctx.fillRect(banana.x, banana.y, banana.width, banana.height);
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function moveBanana() {
+            banana.y += banana.dy;
+            if (banana.y &gt; canvas.height) {
+                banana.y = 0;
+                banana.x = Math.random() * canvas.width;
+            }
+        }
+
+        function detectCollision() {
+            if (banana.x &lt; monkey.x + monkey.width &amp;&amp;
+                banana.x + banana.width &gt; monkey.x &amp;&amp;
+                banana.y &lt; monkey.y + monkey.height &amp;&amp;
+                banana.y + banana.height &gt; monkey.y) {
+                banana.y = 0;
+                banana.x = Math.random() * canvas.width;
+                alert('猴子吃到香蕉了！');
+            }
+        }
+
+        function update() {
+            clearCanvas();
+            drawMonkey();
+            drawBanana();
+            moveBanana();
+            detectCollision();
+            requestAnimationFrame(update);
+        }
+
+        function moveMonkey(event) {
+            if (event.key === 'ArrowLeft' &amp;&amp; monkey.x &gt; 0) {
+                monkey.x -= monkey.dx;
+            } else if (event.key === 'ArrowRight' &amp;&amp; monkey.x + monkey.width &lt; canvas.width) {
+                monkey.x += monkey.dx;
+            }
+        }
+
+        document.addEventListener('keydown', moveMonkey);
+        update();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p></p>
+<h4>運行項目</h4>
+<p>保存這些代碼到相應的文件（例如<code>app.py</code>和<code>templates/index.html</code>），然後運行<code>app.py</code>：</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">python app.py
+</pre>
+<p>這樣你就可以在瀏覽器中打開<code>http://127.0.0.1:5000/</code>來玩這個簡單的猴子吃香蕉遊戲了。</p>
+<p>這個遊戲是很基礎的，你可以根據需要進一步擴展，比如添加分數計算、多個香蕉、不同的關卡等。</p>
+<p><span style="color: #000000; background-color: #ffff99;"><strong>因為問的問題不夠完整，沒有跑出要把東西放在哪邊，所以我又問了第二個問題</strong></span></p>
+<p></p><br />網頁上的 IDE << <a href='網頁上的 IDE.html'>Previous</a> <a href='第二個問題.html'>Next</a> >> 第二個問題</div>
 
     <!-- footer -->
       <div class="container">
