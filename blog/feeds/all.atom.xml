@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T10:25:00+08:00</updated><entry><title>期末報告</title><link href="./2024-Spring-%E6%9C%9F%E6%9C%AB-blog-tutorial.html" rel="alternate"></link><published>2024-06-20T10:25:00+08:00</published><updated>2024-06-20T04:39:24+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-20:./2024-Spring-期末-blog-tutorial.html</id><summary type="html">&lt;p&gt;期末報告 小遊戲&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T10:25:00+08:00</updated><entry><title>期末報告</title><link href="./2024-Spring-%E6%9C%9F%E6%9C%AB-blog-tutorial.html" rel="alternate"></link><published>2024-06-20T10:25:00+08:00</published><updated>2024-06-20T04:45:50+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-20:./2024-Spring-期末-blog-tutorial.html</id><summary type="html">&lt;p&gt;期末報告 小遊戲&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;期末報告 小遊戲&lt;/p&gt;
 
 
@@ -66,7 +66,19 @@ monkey.x += monkey.dx;
 }
 document.addEventListener('keydown', moveMonkey);
 update();
-&lt;/script&gt;</content><category term="期末"></category><category term="網誌編寫"></category></entry><entry><title>w14 課程內容</title><link href="./2024-Spring-w14-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:44:00+08:00</published><updated>2024-06-14T17:40:21+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w14-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/script&gt;
+
+&lt;p&gt;遊戲玩法：&lt;/p&gt;
+&lt;p&gt;目標：
+控制猴子左右移動，捕捉從上方掉落的香蕉。&lt;/p&gt;
+&lt;p&gt;控制方式：
+使用鍵盤的左右方向鍵（← 和 →）來控制猴子的移動。
+左箭頭鍵：猴子向左移動。
+右箭頭鍵：猴子向右移動。&lt;/p&gt;
+&lt;p&gt;遊戲規則：
+香蕉從畫布頂部隨機位置開始掉落，並不斷向下移動。
+當香蕉到達畫布底部時，香蕉會重新從畫布頂部隨機位置開始掉落。
+當猴子成功捕捉到香蕉時，會彈出提示「猴子吃到香蕉了！」。&lt;/p&gt;</content><category term="期末"></category><category term="網誌編寫"></category></entry><entry><title>w14 課程內容</title><link href="./2024-Spring-w14-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:44:00+08:00</published><updated>2024-06-14T17:40:21+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-14:./2024-Spring-w14-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;網站內容整理&lt;/h1&gt;
 &lt;p&gt;上課內容：
