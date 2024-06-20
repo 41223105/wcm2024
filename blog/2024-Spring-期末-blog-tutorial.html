@@ -59,7 +59,7 @@
 <meta property="og:url" content="./2024-Spring-期末-blog-tutorial.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2024-06-20 10:25:00+08:00"/>
-<meta property="article:modified_time" content="2024-06-20 04:45:50.361233+08:00"/>
+<meta property="article:modified_time" content="2024-06-20 04:47:34.421235+08:00"/>
 <meta property="article:author" content="./author/kmol.html">
 <meta property="article:section" content="期末"/>
 <meta property="article:tag" content="網誌編寫"/>
@@ -74,7 +74,7 @@
   "name": "期末報告",
   "headline": "期末報告",
   "datePublished": "2024-06-20 10:25:00+08:00",
-  "dateModified": "2024-06-20 04:45:50.361233+08:00",
+  "dateModified": "2024-06-20 04:47:34.421235+08:00",
   "author": {
     "@type": "Person",
     "name": "kmol",
@@ -234,6 +234,17 @@ init_mathjax();
                 <p>期末報告 小遊戲</p>
 
 
+<h1>遊戲玩法：</h1>
+<p>目標：
+控制猴子左右移動，捕捉從上方掉落的香蕉。</p>
+<p>控制方式：
+使用鍵盤的左右方向鍵（← 和 →）來控制猴子的移動。
+左箭頭鍵：猴子向左移動。
+右箭頭鍵：猴子向右移動。</p>
+<p>遊戲規則：
+香蕉從畫布頂部隨機位置開始掉落，並不斷向下移動。
+當香蕉到達畫布底部時，香蕉會重新從畫布頂部隨機位置開始掉落。
+當猴子成功捕捉到香蕉時，會彈出提示「猴子吃到香蕉了！」。</p>
 <canvas id="gameCanvas" width="800" height="600"></canvas>
 <script>
 const canvas = document.getElementById('gameCanvas');
@@ -298,18 +309,6 @@ monkey.x += monkey.dx;
 document.addEventListener('keydown', moveMonkey);
 update();
 </script>
-
-<p>遊戲玩法：</p>
-<p>目標：
-控制猴子左右移動，捕捉從上方掉落的香蕉。</p>
-<p>控制方式：
-使用鍵盤的左右方向鍵（← 和 →）來控制猴子的移動。
-左箭頭鍵：猴子向左移動。
-右箭頭鍵：猴子向右移動。</p>
-<p>遊戲規則：
-香蕉從畫布頂部隨機位置開始掉落，並不斷向下移動。
-當香蕉到達畫布底部時，香蕉會重新從畫布頂部隨機位置開始掉落。
-當猴子成功捕捉到香蕉時，會彈出提示「猴子吃到香蕉了！」。</p>
             </section>
 
             <section class="post-info">
